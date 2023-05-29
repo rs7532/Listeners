@@ -27,8 +27,8 @@ public class Results_activity extends AppCompatActivity {
         red_player = findViewById(R.id.Red_player);
         winner = findViewById(R.id.Winner);
 
-        blue_result = gi.getIntExtra("blue_result", 0);
-        red_result = gi.getIntExtra("red_result", 0);
+        blue_result = gi.getIntExtra("blue_result", -1);
+        red_result = gi.getIntExtra("red_result", -1);
 
         blue_player.setText(blue_player.getText() + "" + blue_result);
         red_player.setText(red_player.getText() + "" + red_result);
